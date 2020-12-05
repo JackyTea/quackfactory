@@ -16,6 +16,7 @@ class QuackFactory(commands.Bot):
     
     # This will have to change to cog_commands instead of a hard coded string
     self.load_extension('cogs.reactions')
+    self.load_extension('cogs.on_join')
 
   async def on_ready(self):
     log.info(f'Quack logged in: {self.user} (ID: {self.user.id})')
